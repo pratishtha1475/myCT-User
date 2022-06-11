@@ -20,6 +20,7 @@ struct Strings {
     static let kLoginSuccessfully = "Logged in successfully"
     static let kInvalidusernamePass = "Invalid Username/Password"
     static let kTermsandcondition = "Please accept our terms & conditions"
+    static let kInternetNotAvailable = "Internet is not available"
     
     //MARK: - registration
     static let kLogin = "Login"

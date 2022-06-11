@@ -6,3 +6,7 @@
 //
 
 import Foundation
+import UIKit
+struct AppColors {
+    static let primaryColor = UIColor.red
+}

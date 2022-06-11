@@ -6,3 +6,11 @@
 //
 
 import Foundation
+struct ImageNames {
+    static let kCheckBoxUnChecked = "square"
+    static let kCkeckBoxChecked = "checkmark.square.fill"
+    static let kEmail = "envelope.fill"
+    static let kPassword = "lock.fill"
+    static let kUser = "person.fill"
+    static let KPhoneNumber = "iphone.rear.camera"
+}

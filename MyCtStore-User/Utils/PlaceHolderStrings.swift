@@ -6,3 +6,11 @@
 //
 
 import Foundation
+struct PlaceHolder {
+    static let kFirstName = "First Name"
+    static let kLastName = "Last Name"
+    static let kPhonenumber = "Phone Number"
+    static let kEmail = "Email ID"
+    static let kPassword = "Password"
+    static let kConfirmPassword = "Confirm Password"
+}

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Utils: NSObject {
     class func isValidEmailAddress(email: String) -> Bool {
