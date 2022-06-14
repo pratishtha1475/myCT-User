@@ -162,13 +162,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTU-Um-VJ6">
-                                                <rect key="frame" x="131" y="10.5" width="12" height="19"/>
+                                                <rect key="frame" x="132" y="10.5" width="11.5" height="19"/>
                                                 <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
                                                 <color key="textColor" name="lightShade"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Min-cn-8Da">
-                                                <rect key="frame" x="147" y="10.5" width="150" height="19"/>
+                                                <rect key="frame" x="147.5" y="10.5" width="149.5" height="19"/>
                                                 <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
                                                 <color key="textColor" name="lightShade"/>
                                                 <nil key="highlightedColor"/>
@@ -614,7 +614,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="homeTableView" destination="fdQ-gr-BMf" id="8Oo-cn-l7G"/>
+                        <outlet property="tableView" destination="fdQ-gr-BMf" id="8Oo-cn-l7G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HO3-f4-8aD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -30,7 +30,7 @@ class LoginViewModel {
         loginWebService.login(with: parameters) { result in
             switch result {
             case .success(let loginDetails): completion(.success(loginDetails))
-            case.failure(let error): completion(.failure(error))
+            case .failure(let error): completion(.failure(error))
             }
         }
     }
