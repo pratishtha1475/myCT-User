@@ -16,6 +16,8 @@
 		0EEF4217284F80B1002CA448 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF4216284F80B1002CA448 /* ValidationResult.swift */; };
 		0EEF4219284F81BF002CA448 /* ValidationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF4218284F81BF002CA448 /* ValidationStrings.swift */; };
 		5E6404752850C46D00F9B99C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6404742850C46D00F9B99C /* Navigation.swift */; };
+		5E651C7828573B2C009B6AB1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E651C7728573B2C009B6AB1 /* EditProfileViewController.swift */; };
+		5E651C7B285763D8009B6AB1 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E651C7A285763D8009B6AB1 /* ChangePasswordViewController.swift */; };
 		5E9077272851F378009DEB89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9077262851F378009DEB89 /* HomeViewController.swift */; };
 		5E9077292851F3BA009DEB89 /* MyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9077282851F3BA009DEB89 /* MyOrderViewController.swift */; };
 		5E90772B2851F3CA009DEB89 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90772A2851F3C9009DEB89 /* CartViewController.swift */; };
@@ -31,6 +33,8 @@
 		5E940B012850A93F0032DD1D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E940B002850A93E0032DD1D /* AppColors.swift */; };
 		5E940B052850A9F00032DD1D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E940B042850A9F00032DD1D /* Reachability.swift */; };
 		5E940B072850AA100032DD1D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E940B062850AA100032DD1D /* Singleton.swift */; };
+		5EA0D3A5285712AB00531BDD /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA0D3A3285712AB00531BDD /* ProfileTableViewCell.swift */; };
+		5EA0D3A6285712AB00531BDD /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA0D3A4285712AB00531BDD /* ProfileTableViewCell.xib */; };
 		5EA88591284E0E8B0084C86B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA88590284E0E8B0084C86B /* AppDelegate.swift */; };
 		5EA88593284E0E8B0084C86B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA88592284E0E8B0084C86B /* SceneDelegate.swift */; };
 		5EA88598284E0E8B0084C86B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA88596284E0E8B0084C86B /* Main.storyboard */; };
@@ -63,6 +67,8 @@
 		0EEF4218284F81BF002CA448 /* ValidationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationStrings.swift; sourceTree = "<group>"; };
 		41B0726F7DF809FF4322EE1B /* Pods-MyCtStore-User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCtStore-User.debug.xcconfig"; path = "Target Support Files/Pods-MyCtStore-User/Pods-MyCtStore-User.debug.xcconfig"; sourceTree = "<group>"; };
 		5E6404742850C46D00F9B99C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		5E651C7728573B2C009B6AB1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		5E651C7A285763D8009B6AB1 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		5E9077262851F378009DEB89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E9077282851F3BA009DEB89 /* MyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderViewController.swift; sourceTree = "<group>"; };
 		5E90772A2851F3C9009DEB89 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,8 @@
 		5E940B042850A9F00032DD1D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		5E940B062850AA100032DD1D /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		5E940B082850AB730032DD1D /* MyCtStore-User-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCtStore-User-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EA0D3A3285712AB00531BDD /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		5EA0D3A4285712AB00531BDD /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		5EA8858D284E0E8B0084C86B /* MyCtStore-User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyCtStore-User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA88590284E0E8B0084C86B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA88592284E0E8B0084C86B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +168,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E651C7628573AC8009B6AB1 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E90772C2851F41A009DEB89 /* ProfileViewController.swift */,
+				5EA0D3A7285712B000531BDD /* ProfileTableViewCell */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		5E651C79285762C6009B6AB1 /* EditProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E651C7728573B2C009B6AB1 /* EditProfileViewController.swift */,
+			);
+			path = EditProfileViewController;
+			sourceTree = "<group>";
+		};
+		5E651C7C285763E2009B6AB1 /* ChangePasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E651C7A285763D8009B6AB1 /* ChangePasswordViewController.swift */,
+			);
+			path = ChangePasswordViewController;
+			sourceTree = "<group>";
+		};
 		5E9077252851F34D009DEB89 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +232,9 @@
 		5E9077312851F4B6009DEB89 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				5E90772C2851F41A009DEB89 /* ProfileViewController.swift */,
+				5E651C7628573AC8009B6AB1 /* ProfileViewController */,
+				5E651C79285762C6009B6AB1 /* EditProfileViewController */,
+				5E651C7C285763E2009B6AB1 /* ChangePasswordViewController */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -235,6 +270,15 @@
 				5E940B042850A9F00032DD1D /* Reachability.swift */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		5EA0D3A7285712B000531BDD /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5EA0D3A3285712AB00531BDD /* ProfileTableViewCell.swift */,
+				5EA0D3A4285712AB00531BDD /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileTableViewCell;
 			sourceTree = "<group>";
 		};
 		5EA88584284E0E8B0084C86B = {
@@ -392,6 +436,7 @@
 				5EA8859A284E0E8C0084C86B /* Assets.xcassets in Resources */,
 				5EA885BB284E18100084C86B /* Rubik-Bold.ttf in Resources */,
 				5EA88598284E0E8B0084C86B /* Main.storyboard in Resources */,
+				5EA0D3A6285712AB00531BDD /* ProfileTableViewCell.xib in Resources */,
 				5EA885C6284E18100084C86B /* Rubik-Regular.ttf in Resources */,
 				5EA885C3284E18100084C86B /* Rubik-SemiBold.ttf in Resources */,
 				5EA885BE284E18100084C86B /* Rubik-Medium.ttf in Resources */,
@@ -458,7 +503,9 @@
 				5EEAF19F285305A000F78C8D /* LoginAPIResponse.swift in Sources */,
 				0EEF4206284F0E81002CA448 /* RegistarationViewController.swift in Sources */,
 				5E9077272851F378009DEB89 /* HomeViewController.swift in Sources */,
+				5EA0D3A5285712AB00531BDD /* ProfileTableViewCell.swift in Sources */,
 				0EEF420B284F2341002CA448 /* Config.swift in Sources */,
+				5E651C7828573B2C009B6AB1 /* EditProfileViewController.swift in Sources */,
 				5EEAF1AD285362C400F78C8D /* LoginViewModel.swift in Sources */,
 				5E9077332851F5BD009DEB89 /* TabBarViewController.swift in Sources */,
 				5E9077292851F3BA009DEB89 /* MyOrderViewController.swift in Sources */,
@@ -466,6 +513,7 @@
 				5E940AFF2850A8CB0032DD1D /* ImageNames.swift in Sources */,
 				0EEF4212284F7B8B002CA448 /* RegistrationViewModel.swift in Sources */,
 				5E940AFD2850A8450032DD1D /* PlaceHolderStrings.swift in Sources */,
+				5E651C7B285763D8009B6AB1 /* ChangePasswordViewController.swift in Sources */,
 				5E940AF828507BC50032DD1D /* VerifyOTPViewController.swift in Sources */,
 				0EEF4214284F7B9A002CA448 /* ForgotPasswordViewModel.swift in Sources */,
 				5E90773628520D05009DEB89 /* WebService.swift in Sources */,

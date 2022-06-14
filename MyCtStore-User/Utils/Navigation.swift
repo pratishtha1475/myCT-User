@@ -13,4 +13,6 @@ struct NavigatePageTo {
     static let forgotPasswordViewController = "ForgotPasswordViewController"
     static let verifyOTPViewController = "VerifyOTPViewController"
     static let tabBarViewController = "TabBarViewController"
+    static let editProfileViewController = "EditProfileViewController"
+    static let changePasswordViewController = "ChangePasswordViewController"
 }
