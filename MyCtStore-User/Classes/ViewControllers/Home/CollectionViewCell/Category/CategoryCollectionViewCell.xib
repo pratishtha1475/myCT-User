@@ -15,14 +15,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="MyCtStore_User" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOz-Fg-fvH">
-                        <rect key="frame" x="4" y="4" width="42" height="42"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOz-Fg-fvH">
+                        <rect key="frame" x="4" y="4" width="91" height="42"/>
                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -36,10 +36,11 @@
                 <constraint firstAttribute="trailing" secondItem="rOz-Fg-fvH" secondAttribute="trailing" constant="4" id="ik1-3W-75f"/>
                 <constraint firstAttribute="bottom" secondItem="rOz-Fg-fvH" secondAttribute="bottom" constant="4" id="ldj-TI-HvC"/>
             </constraints>
+            <size key="customSize" width="99" height="50"/>
             <connections>
                 <outlet property="categoryLabel" destination="rOz-Fg-fvH" id="mKr-dh-gRQ"/>
             </connections>
-            <point key="canvasLocation" x="139" y="79"/>
+            <point key="canvasLocation" x="173.18840579710147" y="78.348214285714278"/>
         </collectionViewCell>
     </objects>
 </document>

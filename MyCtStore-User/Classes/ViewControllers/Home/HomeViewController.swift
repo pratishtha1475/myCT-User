@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
     
@@ -13,9 +14,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     //MARK: - varaible
     var viewModel: HomeViewModel = HomeViewModel()
+    //MARK: - life cycle method
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        getCategoryAPI()
     }
     //MARK: - initialize
     func initialize() {
@@ -27,6 +30,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "AreaSelectionTableViewCell", bundle: nil), forCellReuseIdentifier: "AreaSelectionTableViewCell")
         tableView.register(UINib(nibName: "CategoriesTableViewCell", bundle: nil), forCellReuseIdentifier: "CategoriesTableViewCell")
+        tableView.register(UINib(nibName: "BannerTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerTableViewCell")
     }
     //MARK: - get category API
     private func getCategoryAPI() {
@@ -34,10 +38,19 @@ class HomeViewController: UIViewController {
             present(Utils.setALert(title: nil, message: Strings.kInternetNotAvailable), animated: true, completion: nil)
             return
         }
-        viewModel.request { result in
-            switch result {
-            case .success(let category): print(category)
-            case .failure(let error): print(error.localizedDescription)
+        viewModel.getResult { isAPISuccess, apiFailureMessage in
+            if isAPISuccess {
+                self.tableView.reloadData()
+            } else {
+                print(apiFailureMessage)
+            }
+        }
+        
+        viewModel.getBannerResult { isAPISuccess, apiFailureMessage in
+            if isAPISuccess {
+                self.tableView.reloadData()
+            } else {
+                print(apiFailureMessage)
             }
         }
     }
@@ -45,12 +58,13 @@ class HomeViewController: UIViewController {
 //MARK: - TableView Delegate & DataSource Method
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int { return 2 }
+    func numberOfSections(in tableView: UITableView) -> Int { return 3 }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0: return 1
-//        case 1: return CategoryData
+        case 1: return 1
+        case 2: return 1
         default: return 0
         }
     }
@@ -61,7 +75,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let cell: AreaSelectionTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AreaSelectionTableViewCell", for: indexPath) as!AreaSelectionTableViewCell
             return cell
         case 1:
-            let cell: CategoriesTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CategoriesTableViewCell", for: indexPath) as!CategoriesTableViewCell
+            let cell: CategoriesTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CategoriesTableViewCell", for: indexPath) as! CategoriesTableViewCell
+            cell.set(categories: viewModel.categoryArray)
+            return cell
+        case 2:
+            let cell: BannerTableViewCell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell", for: indexPath) as! BannerTableViewCell
+            cell.set(banner: viewModel.bannerArray)
             return cell
         default:
             let cell = UITableViewCell()
@@ -69,9 +88,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.item {
+        switch indexPath.section {
         case 0: return 100
-        case 1: return 70
+        case 1: return 60
+        case 2: return 300
         default: return 0
         }
     }

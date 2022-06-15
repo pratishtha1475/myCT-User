@@ -12,6 +12,11 @@ class CategoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var categoriesCollectionView: HomeCollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
-     
+    }
+    
+    func set(categories: [Category]) {
+        categoriesCollectionView.arrCategory = categories
+        
+        categoriesCollectionView.reloadData()
     }
 }

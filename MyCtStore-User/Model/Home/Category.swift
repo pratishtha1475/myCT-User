@@ -2,15 +2,16 @@
 //  Category.swift
 //  MyCtStore-User
 //
-//  Created by Ishita Ginoya on 13/06/22.
+//  Created by Pratishtha Ginoya on 14/06/22.
 //
 
 import Foundation
 struct Category: Codable {
-    var error: Bool
-    var data: [CategoryData]
+    var id: String?
+    var type: String?
     
     private enum CodingKeys: String, CodingKey {
-        case error, data
+        case id
+        case type
     }
 }
